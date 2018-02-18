@@ -1,0 +1,13 @@
+<html>
+<head>
+	<script src="aframe.min.js"></script>
+</head>
+<body> 
+	<a-scene>
+		<a-assets>
+			<img id="dhoni" src="dhoni.jpg" />
+		</a-assets>
+		<a-sky src="#dhoni" rotation="0 -2.25 -5"> </a-sky>
+	</a-scene>
+</body>
+</html>
