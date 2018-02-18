@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "jyothi",
+  "version": "1.0",
+  "permissions":["tabs"],
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+ 
+  "browser_action":{
+  "default_title":"srkr logo",
+  "default_popup":"1.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["jyothi.js"]
+    }
+  ]
+
+}
