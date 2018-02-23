@@ -1,0 +1,22 @@
+[package]
+name = "rust-irc"
+version = "0.1.0"
+authors = ["Jayesh Katta Ramalingaiah <kr.jayesh94@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+
+futures = "0.1"
+hyper = "0.11"
+tokio-core = "0.1"
+reqwest = "0.8.4"
+url = "1.2"
+rusqlite = "0.12.0"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rocket_contrib = "0.3.6"
+
+rust-ini = "0.10"

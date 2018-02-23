@@ -1,0 +1,21 @@
+[package]
+name = "rust-irc-server"
+version = "0.1.0"
+authors = ["Jayesh Katta Ramalingaiah <kr.jayesh94@gmail.com>"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+simple_redis = "0.3.39"
+rand = "0.3"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rocket_contrib = "0.3.6"
+reqwest = "0.8.4"
+url = "1.2"
+time = "0.1"
