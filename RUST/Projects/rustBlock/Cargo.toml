@@ -1,0 +1,11 @@
+[package]
+name = "rustychain"
+version = "0.1.0"
+authors = ["Jayesh <kr.jayesh94@gmail.com>"]
+
+[dependencies]
+blake2 = "0.6.1"
+byteorder = "1.1.0"
+serde = "1.0.14"
+serde_derive = "1.0.14"
+serde_yaml = "0.7.1"
