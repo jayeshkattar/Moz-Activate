@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gram Bangla</title>
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <!-- <script src="aframe.js"></script> !-->
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="grass" src="images/video_game_grass.jpg">
+      <img id="ground_forest" src="images/GroundForest.jpg">
+      <img id="muddy_surface" src="images/GroundForestMulch.jpg">
+      <img id="house" src="images/Wall.jpg">
+      <img id="tin-roof" src="images/tin-roof.jpg">
+      <img id="rusty-tin" src="images/rusty_tin_texture.jpg">
+      <img id="window" src="images/background-texture.jpg">
+      <img id="light_wood" src="images/pine-tree-bark.jpg">
+      <img id="door" src="images/Door-Village.jpg">
+      <img id="green_leaf" src="images/Green-leaves.jpg">
+      <img id="daylight" src="images/vp-hdri-08-panorama-preview.jpg">
+      <img id="straw" src="images/starw-bales.jpg">
+      <img id="bamboo-stick" src="images/bamboo-stick-wooden-texture.jpg">
+      <img id="bamboo-plywood" src="images/bamboo-plywood.jpg">
+      <img id="river" src="images/water_texture.jpg">
+    </a-assets>
+
+    <a-entity id="grass_&_river">
+      <a-entity id="grass">
+        <a-plane id="grass-1" position="0 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <!-- left to right!-->
+        <a-plane id="grass-2" position="20 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-3" position="-20 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-4" position="40 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-6" position="60 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-8" position="80 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-10" position="100 -1 0" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <!-- top to bottom!-->
+        <a-plane id="grass-12" position="0 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-13" position="0 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-14" position="0 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-15" position="0 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-16" position="0 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-17" position="0 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-18" position="0 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-20" position="0 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest" material=""></a-plane>
+
+        <!-- 2nd and 4th quardrant!-->
+        <a-plane id="grass-22" position="20 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-23" position="40 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-24" position="60 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-25" position="80 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-26" position="100 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-32" position="20 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-33" position="40 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-34" position="60 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-35" position="80 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-36" position="100 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-42" position="20 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-43" position="40 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-44" position="60 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-45" position="80 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-46" position="100 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-52" position="20 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-53" position="40 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-54" position="60 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-55" position="80 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-56" position="100 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-62" position="20 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-63" position="40 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-64" position="60 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-65" position="80 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-66" position="100 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <!-- 2nd and 4th quardrant!-->
+
+        <!-- 1st and 3rd quardrant!-->
+        <a-plane id="grass-72" position="-20 -1 20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-77" position="20 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-78" position="40 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-79" position="60 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-80" position="80 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-81" position="100 -1 -20" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-82" position="-20 -1 40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-87" position="20 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-88" position="40 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-89" position="60 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-90" position="80 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-91" position="100 -1 -40" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-92" position="-20 -1 60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-97" position="20 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-98" position="40 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-99" position="60 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-100" position="80 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-101" position="100 -1 -60" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-102" position="-20 -1 80" rotation="-90 0 0" width="20" height="20" src="#ground_forest" material=""></a-plane>
+
+        <a-plane id="grass-107" position="20 -1 -80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-108" position="40 -1 -80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-109" position="60 -1 -80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-110" position="80 -1 -80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-111" position="100 -1 -80" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+
+        <a-plane id="grass-112" position="-20 -1 100" rotation="-90 0 0" width="20" height="20" src="#ground_forest" material=""></a-plane>
+
+        <a-plane id="grass-118" position="40 -1 -100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-119" position="60 -1 -100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-120" position="80 -1 -100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <a-plane id="grass-121" position="100 -1 -100" rotation="-90 0 0" width="20" height="20" src="#ground_forest"></a-plane>
+        <!-- 1st and 3rd quardrant!-->
+
+        <!-- Recovering edges of the grass!-->
+        <a-plane id="grass-122" position="-12.683 -1.013 -10.445" rotation="-90.012 37.643 0" width="20" height="20" src="#ground_forest"
+          geometry="width:27.74;height:20.4"></a-plane>
+        <a-plane id="grass-123" position="-7.856 -1.013 -22.999" rotation="-90.012 62.968 0" width="20" height="20" src="#ground_forest"
+          geometry="height:20.4;width:30.68"></a-plane>
+        <a-plane id="grass-124" position="7.34 -1.013 -72.759" rotation="-90.012 44.691 0" width="20" height="20" src="#ground_forest"
+          geometry="height:20.4;width:28.1"></a-plane>
+
+        <a-plane id="grass-126" position="32.529 -1.013 -92.883" rotation="-90.01166961505233 62.85347012585131 0" width="20" height="20"
+          src="#ground_forest" geometry="height:20.4;width:28.1"></a-plane>
+        <a-plane id="grass-125" position="27.297 -1.013 -86.622" rotation="-90.01166961505233 24.465297852086152 0" width="20" height="20"
+          src="#ground_forest" geometry="height:20.4;width:28.1"></a-plane>
+        <a-plane id="grass-127" position="-2.675 -1.013 -43.015" rotation="-90.01166961505233 78.20873903535737 0" width="20" height="20"
+          src="#ground_forest" geometry="height:20.4;width:30.68"></a-plane>
+
+        <!-- Recovering edges of the grass!-->
+        <a-plane id="grass-128" position="19.992 -0.9 -20" rotation="-90 0 0" width="20" height="20" src="#muddy_surface" material=""
+          geometry="width:10;height:10"></a-plane>
+        <a-plane id="grass-129" position="19.992 -0.9 -11.504" rotation="-90 0 0" width="20" height="20" src="#muddy_surface" geometry="height:10;width:10"></a-plane>
+        <a-plane id="grass-130" position="19.992 -0.9 -29.961" rotation="-90 0 0" width="20" height="20" src="#muddy_surface" geometry="height:10;width:10"></a-plane>
+      </a-entity>
+
+      <a-entity id="river" position="0 -2.058 0">
+        <!-- left to right!-->
+        <a-plane id="grass-5" position="-40 -1 0" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-7" position="-60 -1 0" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-9" position="-80 -1 0" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-11" position="-100 -1 0" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <!-- left to right!-->
+
+        <!-- top to bottom!-->
+        <a-plane id="grass-19" position="0 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-21" position="0 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <!-- top to bottom!-->
+
+        <!-- 2nd and 4th quardrant!-->
+        <a-plane id="grass-27" position="-20 -1 -20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-28" position="-40 -1 -20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-29" position="-60 -1 -20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-30" position="-80 -1 -20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-31" position="-100 -1 -20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-37" position="-20 -1 -40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-38" position="-40 -1 -40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-39" position="-60 -1 -40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-40" position="-80 -1 -40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-41" position="-100 -1 -40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-47" position="-20 -1 -60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-48" position="-40 -1 -60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-49" position="-60 -1 -60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-50" position="-80 -1 -60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-51" position="-100 -1 -60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-57" position="-20 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-58" position="-40 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-59" position="-60 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-60" position="-80 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-61" position="-100 -1 -80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-67" position="-20 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-68" position="-40 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-69" position="-60 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-70" position="-80 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-71" position="-100 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <!-- 2nd and 4th quardrant!-->
+
+        <!-- 1st and 3rd quardrant!-->
+        <a-plane id="grass-73" position="-40 -1 20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-74" position="-60 -1 20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-75" position="-80 -1 20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-76" position="-100 -1 20" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-83" position="-40 -1 40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-84" position="-60 -1 40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-85" position="-80 -1 40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-86" position="-100 -1 40" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-93" position="-40 -1 60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-94" position="-60 -1 60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-95" position="-80 -1 60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-96" position="-100 -1 60" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-103" position="-40 -1 80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-104" position="-60 -1 80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-105" position="-80 -1 80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-106" position="-100 -1 80" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-113" position="-40 -1 100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-114" position="-60 -1 100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-115" position="-80 -1 100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <a-plane id="grass-116" position="-100 -1 100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+
+        <a-plane id="grass-117" position="20 -1 -100" rotation="-90 0 0" width="20" height="20" src="#river"></a-plane>
+        <!-- 1st and 3rd quardrant!-->
+      </a-entity>
+
+      <!-- color="#ECECEC" !-->
+    </a-entity>
+
+    <a-entity id="House-001" position="0 0 0">
+      <a-entity id="House" position="19.38 0 0">
+        <!-- Roof Tin!-->
+        <a-plane position="1.8 4.5 -15" rotation="-45 90 0" width="12" height="5" src="#tin-roof"></a-plane>
+        <a-plane position="1.76 4.5 -15" rotation="496 90 180" width="12" height="5" src="#tin-roof"></a-plane>
+        <a-plane position="-1.75 4.5 -15" rotation="-45 -90 -180" width="12" height="5" src="#tin-roof"></a-plane>
+        <a-plane position="-1.75 4.5 -15" rotation="405 90 0" width="12" height="5" src="#tin-roof"></a-plane>
+
+        <!-- Mud House!-->
+        <a-plane position="0 3.4 -10.05" rotation="0 0 -45" width="4" height="4" src="#house"></a-plane>
+        <a-plane position="0 3.4 -19.952" rotation="0 0 -45" width="4" height="4" src="#house"></a-plane>
+        <a-plane position="0 3.4 -19.952" rotation="180 0 -45" width="4" height="4" src="#house"></a-plane>
+        <a-box src="#house" width="5" height="7" depth="2.7" position="0 0 -15" rotation="0 90 0" scale="2 1 2"></a-box>
+
+        <!-- Window!-->
+        <a-plane position="0 2.4 -9.9" rotation="0 0 0" width="1.5" height="2" src="#window"></a-plane>
+        <a-plane position="-2.74 0.7 -17.5" rotation="0 -90 0" width="1.5" height="2" src="#window"></a-plane>
+        <a-plane position="-2.74 0.7 -14.5" rotation="0 -90 0" width="1.5" height="2" src="#window"></a-plane>
+        <a-plane position="2.802 1.436 -12.61" width="1.5" height="2" src="#window" rotation="0 90 0"></a-plane>
+        <a-plane position="2.802 1.436 -17.737" width="1.5" height="2" src="#window" rotation="0 90 0"></a-plane>
+        <a-plane position="0.021 1.762 -20.05" width="1.5" height="2" src="#window" rotation="0 180 0"></a-plane>
+
+        <!-- Door!-->
+        <a-plane position="-2.72 0.7 -12" rotation="0 -90 0" width="1.7" height="3" src="#door"></a-plane>
+      </a-entity>
+
+      <a-entity id="Tree" position="14.813 0 -3.828" rotation="0 -64.17 0">
+        <a-cylinder id="tree-1" position="0 3.145 -5" radius="0.5" height="11.5" src="#light_wood" geometry="height:8.81;radius:0.8"></a-cylinder>
+        <a-cylinder id="tree-2" position="-1 4.75 -5" rotation="0 0 65" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+        <a-cylinder id="tree-3" position="-2.6 6.4 -5" rotation="0 0 25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+        <a-cylinder id="tree-4" position="-2 6.1 -5" rotation="0 0 -65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-5" position="-1.55 6.53 -5" rotation="0 0 -15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-6" position="-2.89 6.1 -5" rotation="0 0 65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-7" position="-3.33 6.53 -5" rotation="0 0 15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-8" position="1 5 -5" rotation="0 0 -75" radius="0.13" height="2.38" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+        <a-cylinder id="tree-9" position="2.62 6.4 -5" rotation="0 0 -25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+        <a-cylinder id="tree-10" position="2.5 6.1 -4.4" rotation="75 0 0" radius="0.07" height="1.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-11" position="2.51 6.59 -3.63" rotation="10 0 0" radius="0.07" height="0.7" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+        <a-cylinder id="tree-12" position="-0.874 -0.962 -4.939" rotation="-16.272001381715377 -5.500394833255903 102.04378331279962"
+          radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+        <a-cylinder id="tree-13" position="-0.448 -1.003 -3.958" rotation="-16.272001381715377 65.43178020394001 102.04378331279962"
+          radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+        <a-cylinder id="tree-14" position="0.584 -0.972 -4.151" rotation="-16.272001381715377 116.53961552960943 102.04378331279962"
+          radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+        <a-cylinder id="tree-15" position="0.793 -0.927 -5.291" rotation="-16.272001381715377 -174.8094232944142 102.04378331279962"
+          radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+        <a-cylinder id="tree-16" position="-0.092 -0.927 -5.72" rotation="-16.272001381715377 -80.44327443636757 102.04378331279962"
+          radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+        <a-sphere position="2.147 5.309 -5.009" radius="2.6" src="#light_wood" geometry="radius:0.3" id="tree-17"></a-sphere>
+        <a-sphere position="-2.251 5.32 -4.995" radius="2.6" src="#light_wood" geometry="radius:0.3" id="tree-18"></a-sphere>
+
+        <a-sphere position="0 9.25 -6" radius="3" src="#green_leaf"></a-sphere>
+        <a-sphere position="3 9.25 -6" radius="2.6" src="#green_leaf"></a-sphere>
+        <a-sphere position="3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+        <a-sphere position="-3 9.25 -6" radius="2.6" src="#green_leaf"></a-sphere>
+        <a-sphere position="-3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+        <a-sphere position="2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+        <a-sphere position="-2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      </a-entity>
+
+      <a-entity id="straw bales" position="18.49 -4.58 -9.60">
+        <a-cone src="#straw" height="5" radius-bottom="3" radius-top="1.5" position="0 6 -15"></a-cone>
+        <a-sphere src="#straw" radius="1.53" position="0 8.24 -15"></a-sphere>
+        <a-cylinder src="#light_wood" color="#cc8800" height="0.90" radius="0.30" position="0 9.97 -15.00"></a-cylinder>
+      </a-entity>
+
+      <!-- !-->
+      <a-entity id="Fence" position="14.87 0 -19.585">
+        <a-cylinder id="fence-01" position="0 0.903 0" rotation="0 0 90" geometry="height:3.73;radius:0.09000000000000001" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-02" position="0 2.128 0" rotation="0 0 90" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-3" position="-1.187 2.104 -1.357" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-7" position="-1.187 2.104 -4.609" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-11" position="-1.187 2.104 -7.976" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-15" position="0.263 2.104 -9.637" rotation="-90.01166961505233 -90.01166961505233 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-23" position="7.083 2.104 -9.637" rotation="-90.01166961505233 -90.01166961505233 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-27" position="8.58 2.104 -8.043" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-31" position="8.581 2.104 -4.603" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-47" position="7.094 6.329 -4.785" rotation="-89.95437383553924 0 0" geometry="height:11;radius:0.09"
+          src="#bamboo-stick" material=""></a-cylinder>
+        <a-cylinder id="fence-59" position="3.665 9.096 -4.785" rotation="-89.95437383553924 0 0" geometry="height:10;radius:0.09"
+          src="#bamboo-stick" material=""></a-cylinder>
+        <a-cylinder id="fence-49" position="3.692 6.329 -9.573" rotation="-89.954 90 0" geometry="height:8;radius:0.09" src="#bamboo-stick"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-50" position="3.692 6.329 -0.061" rotation="-89.95437383553924 91.4440641028794 0" geometry="height:8;radius:0.09"
+          src="#bamboo-stick" material=""></a-cylinder>
+        <a-cylinder id="fence-48" position="0.281 6.329 -4.936" rotation="-89.954 0 0" geometry="height:11;radius:0.09" src="#bamboo-stick"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-35" position="8.582 2.104 -1.754" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-39" position="7.959 2.104 0.002" rotation="-89.95437383553924 -64.28586461367837 0" geometry="height:1.8199999999999998;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-40" position="7.959 0.809 0.002" rotation="-89.95437383553924 -64.28586461367837 0" geometry="height:1.8199999999999998;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-41" position="7.959 -0.459 0.002" rotation="-89.95437383553924 -64.28586461367837 0" geometry="height:1.8199999999999998;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-36" position="8.536 0.88 -1.754" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-37" position="8.536 -0.44 -1.754" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-28" position="8.58 0.886 -8.043" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-32" position="8.581 0.886 -4.611" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-29" position="8.58 -0.419 -8.043" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-33" position="8.581 -0.419 -4.604" rotation="-89.95437383553924 0 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-16" position="0.263 0.891 -9.637" rotation="-90.01166961505233 -90.01166961505233 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+
+        <a-cylinder id="fence-24" position="7.08 0.891 -9.637" rotation="-90.01166961505233 -90.01166961505233 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-17" position="0.263 -0.414 -9.637" rotation="-90.01166961505233 -90.01166961505233 0" geometry="height:3.73;radius:0.09"
+          src="#bamboo-stick"></a-cylinder>
+
+        <a-cylinder id="fence-25" position="7.14 -0.414 -9.637" rotation="-90.012 -90.012 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-8" position="-1.187 0.872 -4.609" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-12" position="-1.187 0.872 -7.949" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-9" position="-1.187 -0.371 -4.609" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-13" position="-1.187 -0.371 -7.991" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-4" position="-1.187 0.868 -1.357" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-5" position="-1.187 -0.365 -1.357" rotation="-90 0 0" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-03" position="0 -0.386 0" rotation="0 0 90" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-04" position="-1.229 0.643 0.057" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-6" position="-1.229 0.643 -2.986" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-19" position="-0.578 4.229 -3.122" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 -20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-42" position="-0.594 4.229 -0.125" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 -20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-43" position="7.975 4.229 -0.335" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-44" position="7.952 4.229 -3.089" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-45" position="7.972 4.229 -6.17" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-46" position="7.994 4.229 -9.367" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-51" position="5.579 7.576 -9.367" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-52" position="5.579 7.576 -5.996" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-53" position="5.579 7.576 -3.224" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-54" position="5.579 7.576 -0.498" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-55" position="1.747 7.576 -0.328" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 -54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-56" position="1.747 7.576 -3.212" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 -54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-57" position="1.747 7.576 -5.943" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 -54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-58" position="1.747 7.576 -9.248" geometry="height:5.5;radius:0.09" src="#bamboo-stick" rotation="0 0 -54.488"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-20" position="-0.647 4.229 -6.126" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 -20.569"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-21" position="-0.683 4.229 -9.444" geometry="height:5;radius:0.09" src="#bamboo-stick" rotation="0 0 -20.569184845196553"
+          material=""></a-cylinder>
+        <a-cylinder id="fence-10" position="-1.229 0.643 -6.286" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-14" position="-1.229 0.643 -9.605" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-18" position="1.985 0.643 -9.605" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-22" position="5.403 0.643 -9.605" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-26" position="8.562 0.643 -9.605" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-30" position="8.563 0.643 -6.344" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-34" position="8.564 0.643 -2.922" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-38" position="8.565 0.643 -0.194" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+        <a-cylinder id="fence-05" position="1.581 0.643 0.03" geometry="height:3.73;radius:0.09" src="#bamboo-stick"></a-cylinder>
+
+        <a-entity id="tinDoor-01" position="-5.542 -0.745 -4.315" rotation="0 -41.138369690393105 0">
+          <a-plane id="tinDoor-1" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 -180.02333923010465 -90.01166961505233"
+            width="12" height="5" geometry="height:3.1;width:3.15"></a-plane>
+          <a-plane id="tinDoor-2" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 0.057295779513082325 89.95437383553924"
+            width="12" height="5" geometry="height:3.1;width:3.15"></a-plane>
+        </a-entity>
+
+        <a-entity id="tinRoof-02" position="-3.335 -3.119 -6.186" rotation="81.876 -90.069 -90.069">
+          <a-plane id="tinRoof-1" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 -137 -90.01166961505233" width="12" height="5"
+            geometry="width:11;height:6"></a-plane>
+          <a-plane id="tinRoof-2" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 45 90" width="12" height="5" geometry="width:11;height:6"></a-plane>
+        </a-entity>
+
+        <a-entity id="tinRoof-03" position="10.719 -3.119 -3.397" rotation="81.876 90 -90.069">
+          <a-plane id="tinRoof-1" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 -137 -90.01166961505233" width="12" height="5"
+            geometry="height:6;width:11"></a-plane>
+          <a-plane id="tinRoof-2" src="#rusty-tin" position="3.122 1.385 -11.261" rotation="0 45 90" width="12" height="5" geometry="height:6;width:11"></a-plane>
+        </a-entity>
+
+      </a-entity>
+
+    </a-entity>
+
+    <a-entity id="Tree-02" position="-10.318 1.185 -41.962">
+      <!--  !-->
+      <a-sphere id="bundle-1" src="#green_leaf" position="-1.268 14.568 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-5" src="#green_leaf" position="-9.124 13.845 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-12" src="#green_leaf" position="-12.117 13.845 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-13" src="#green_leaf" position="-14.534 12.132 0.092" material="" geometry="radius:2.7"></a-sphere>
+      <a-sphere id="bundle-14" src="#green_leaf" position="-12.896 12.132 2.316" material="" geometry="radius:2.7"></a-sphere>
+      <a-sphere id="bundle-15" src="#green_leaf" position="-12.896 12.809 -2.186" material="" geometry="radius:2.7"></a-sphere>
+      <a-sphere id="bundle-6" src="#green_leaf" position="-7.983 16.393 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-7" src="#green_leaf" position="-3.036 16.393 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-8" src="#green_leaf" position="0.891 15.486 0.092" material="" geometry="radius:3.37"></a-sphere>
+      <a-sphere id="bundle-9" src="#green_leaf" position="3.684 14.894 0.092" material="" geometry="radius:2.8600000000000003"></a-sphere>
+      <a-sphere id="bundle-10" src="#green_leaf" position="2.15 14.894 1.291" material="" geometry="radius:2.8600000000000003"></a-sphere>
+      <a-sphere id="bundle-11" src="#green_leaf" position="2.15 14.894 -1.415" material="" geometry="radius:2.8600000000000003"></a-sphere>
+      <a-sphere id="bundle-3" src="#green_leaf" position="-4.56 13.784 -3.175" material="" geometry="radius:3.95"></a-sphere>
+      <a-sphere id="bundle-4" src="#green_leaf" position="-4.56 13.784 -0.007" material="" geometry="radius:3.95"></a-sphere>
+      <a-sphere id="bundle-2" src="#green_leaf" position="-4.56 13.784 2.8" material="" geometry="radius:3.95"></a-sphere>
+
+      <a-cylinder src="#light_wood" position="0 -0.521 0" rotation="0 0 6.875493541569878" geometry="height:3.45;radius:1.3" id="trunk-1"></a-cylinder>
+      <a-sphere id="trunk-2" position="-0.04 1.222 -0.046" geometry="radius:1.27" src="#light_wood"></a-sphere>
+      <a-cylinder position="-1.545 2.259 0" rotation="0 0 52.081863577391836" geometry="height:4.28;radius:1.3" id="trunk-3" src="#light_wood"></a-cylinder>
+      <a-sphere id="trunk-4" position="-3.397 3.517 0.068" geometry="radius:1.27" src="#light_wood"></a-sphere>
+      <a-sphere id="trunk-8" position="-9.014 6.531 -0.013" geometry="radius:0.84" src="#light_wood"></a-sphere>
+      <a-sphere id="trunk-11" position="1.316 9.206 -1.854" geometry="radius:0.8400000000000001" src="#light_wood"></a-sphere>
+      <a-cylinder position="-4.044 7.173 0" rotation="0 0 11.86" geometry="height:6.78;radius:1.3" id="trunk-5" src="#light_wood"></a-cylinder>
+      <a-cylinder position="-6.671 6.286 0" rotation="0 0 83.25076763250861" geometry="height:5.64;radius:0.71" id="trunk-6" src="#light_wood"></a-cylinder>
+      <a-cylinder position="-0.809 8.166 -1.067" rotation="0 21.199438419840458 112.75809408174601" geometry="height:5.64;radius:0.71"
+        id="trunk-9" src="#light_wood"></a-cylinder>
+      <a-cylinder position="-9.471 8.316 0" rotation="0 0 11.631043241155712" geometry="height:3.62;radius:0.7100000000000001"
+        id="trunk-7" src="#light_wood"></a-cylinder>
+      <a-cylinder position="1.098 10.727 -1.887" rotation="0 0 11.631043241155712" geometry="height:3.62;radius:0.7100000000000001"
+        id="trunk-10" src="#light_wood"></a-cylinder>
+      <a-cylinder id="root-1" position="-1.309 -2.196 -0.218" rotation="-16.272001381715377 -5.500394833255903 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="root-2" position="-0.729 -2.094 1.828" rotation="-16.272001381715377 65.43178020394001 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="root-3" position="1.089 -2.006 1.49" rotation="-16.272001381715377 116.53961552960943 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="root-4" position="2.074 -2.014 -0.192" rotation="-16.272001381715377 -174.8094232944142 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="root-5" position="-0.272 -2.247 -2.033" rotation="-16.272001381715377 -80.44327443636757 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+    </a-entity>
+
+    <a-entity id="Tree-03" rotation="0 -23.433973820850667 0" position="11.985 0 -12.6">
+      <a-cylinder id="tree-1" position="0 3.145 -5" radius="0.5" height="11.5" src="#light_wood" geometry="height:8.81;radius:0.8"></a-cylinder>
+      <a-cylinder id="tree-2" position="-1 4.75 -5" rotation="0 0 65" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-3" position="-2.6 6.4 -5" rotation="0 0 25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-4" position="-2 6.1 -5" rotation="0 0 -65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-5" position="-1.55 6.53 -5" rotation="0 0 -15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-6" position="-2.89 6.1 -5" rotation="0 0 65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-7" position="-3.33 6.53 -5" rotation="0 0 15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-8" position="1 5 -5" rotation="0 0 -75" radius="0.13" height="2.38" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-9" position="2.62 6.4 -5" rotation="0 0 -25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-10" position="2.5 6.1 -4.4" rotation="75 0 0" radius="0.07" height="1.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-11" position="2.51 6.59 -3.63" rotation="10 0 0" radius="0.07" height="0.7" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-12" position="-0.874 -0.962 -4.939" rotation="-16.272001381715377 -5.500394833255903 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-13" position="-0.448 -1.003 -3.958" rotation="-16.272001381715377 65.43178020394001 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-14" position="0.584 -0.972 -4.151" rotation="-16.272001381715377 116.53961552960943 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-15" position="0.793 -0.927 -5.291" rotation="-16.272001381715377 -174.8094232944142 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-16" position="-0.092 -0.927 -5.72" rotation="-16.272001381715377 -80.44327443636757 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-sphere position="2.147 5.309 -5.009" radius="2.6" src="#light_wood" geometry="radius:0.3" id="tree-17"></a-sphere>
+      <a-sphere position="-2.251 5.32 -4.995" radius="2.6" src="#light_wood" geometry="radius:0.3" id="tree-18"></a-sphere>
+
+      <a-sphere position="0 9.25 -6" radius="3" src="#green_leaf"></a-sphere>
+      <a-sphere position="3 9.25 -6" radius="2.6" src="#green_leaf" id="bundle-1"></a-sphere>
+      <a-sphere position="4.922 9.25 -5.069" radius="2.6" src="#green_leaf" geometry="radius:2" id="bundle-2"></a-sphere>
+      <a-sphere position="-4.773 9.25 -5.844" radius="2.6" src="#green_leaf" geometry="radius:2" id="bundle-4"></a-sphere>
+      <a-sphere position="5.97 9.25 -4.563" radius="2.6" src="#green_leaf" geometry="radius:1.6" id="bundle-3"></a-sphere>
+      <a-sphere position="-6.113 9.25 -5.61" radius="2.6" src="#green_leaf" geometry="radius:1.6" id="bundle-5"></a-sphere>
+      <a-sphere position="3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+      <a-sphere position="-3 9.25 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      <a-sphere position="-3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+      <a-sphere position="2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      <a-sphere position="-2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+    </a-entity>
+
+    <a-entity id="Bamboo_shovel" position="-22.935 -5.936 -16.528" rotation="0 60.44704738630185 0">
+      <a-cylinder id="bamboo_shovel-1" src="#bamboo-stick" position="0 4.6 0" geometry="height:4;radius:0.12" material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-16" src="#bamboo-stick" position="1.903 5.278 0.124" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-17" src="#bamboo-stick" position="1.903 5.278 -0.138" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-18" src="#bamboo-stick" position="1.903 5.278 -4.837" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-19" src="#bamboo-stick" position="1.903 5.278 -5.125" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-20" src="#bamboo-stick" position="1.903 5.278 -9.872" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-21" src="#bamboo-stick" position="1.903 5.278 -10.135" geometry="height:3.7;radius:0.02" rotation="0 0 90.01166961505233"
+        material=""></a-cylinder>
+      <a-cylinder id="bamboo_shovel-7" src="#bamboo-plywood" position="0.304 5.012 -5.42" geometry="height:11.86;radius:0.22" material=""
+        rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-8" src="#bamboo-plywood" position="0.684 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-9" src="#bamboo-plywood" position="1.095 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-10" src="#bamboo-plywood" position="1.487 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-11" src="#bamboo-plywood" position="1.889 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-12" src="#bamboo-plywood" position="2.308 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-13" src="#bamboo-plywood" position="2.714 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-14" src="#bamboo-plywood" position="3.114 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-15" src="#bamboo-plywood" position="3.527 5.012 -5.42" geometry="height:11.860000000000001;radius:0.22"
+        material="" rotation="90 0 0"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-2" src="#bamboo-stick" position="3.749 4.6 0" geometry="height:4;radius:0.12"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-3" src="#bamboo-stick" position="3.774 4.6 -5" geometry="height:4;radius:0.12"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-6" src="#bamboo-stick" position="3.774 4.6 -10" geometry="height:4;radius:0.12"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-4" src="#bamboo-stick" position="0 4.6 -5" geometry="height:4;radius:0.12"></a-cylinder>
+      <a-cylinder id="bamboo_shovel-5" src="#bamboo-stick" position="0 4.6 -10" geometry="height:4;radius:0.12"></a-cylinder>
+    </a-entity>
+
+    <a-entity id="Tree-04" position="28.648 0 -9.497" rotation="0 25.210 0">
+      <a-cylinder id="tree-1" position="0 1.744 -5" radius="0.5" height="11.5" src="#light_wood" geometry="height:6;radius:0.8"></a-cylinder>
+      <a-cylinder id="tree-19" position="0.855 5.657 -5.111" radius="0.5" height="11.5" src="#light_wood" geometry="height:3.7"
+        rotation="0 0 -28.590593977028078"></a-cylinder>
+      <a-cylinder id="tree-20" position="-0.886 5.936 -5.041" radius="0.5" height="11.5" src="#light_wood" geometry="height:3.7"
+        rotation="0 0 28.591"></a-cylinder>
+      <a-cylinder id="tree-2" position="-1 4.75 -5" rotation="0 0 65" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-3" position="-2.6 6.4 -5" rotation="0 0 25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-4" position="-2 6.1 -5" rotation="0 0 -65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-5" position="-1.55 6.53 -5" rotation="0 0 -15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-6" position="-2.89 6.1 -5" rotation="0 0 65" radius="0.09" height="0.9" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-7" position="-3.33 6.53 -5" rotation="0 0 15" radius="0.09" height="0.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-8" position="1 5 -5" rotation="0 0 -75" radius="0.13" height="2.38" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-9" position="2.62 6.4 -5" rotation="0 0 -25" radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.3"></a-cylinder>
+      <a-cylinder id="tree-10" position="2.5 6.1 -4.4" rotation="75 0 0" radius="0.07" height="1.5" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-11" position="2.51 6.59 -3.63" rotation="10 0 0" radius="0.07" height="0.7" src="#light_wood" geometry="radius:0.18"></a-cylinder>
+      <a-cylinder id="tree-12" position="-0.874 -0.962 -4.939" rotation="-16.272001381715377 -5.500394833255903 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-13" position="-0.448 -1.003 -3.958" rotation="-16.272001381715377 65.43178020394001 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-14" position="0.584 -0.972 -4.151" rotation="-16.272001381715377 116.53961552960943 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-15" position="0.793 -0.927 -5.291" rotation="-16.272001381715377 -174.8094232944142 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-cylinder id="tree-16" position="-0.092 -0.927 -5.72" rotation="-16.272001381715377 -80.44327443636757 102.04378331279962"
+        radius="0.13" height="2.5" src="#light_wood" geometry="radius:0.15"></a-cylinder>
+      <a-sphere id="tree-17" position="2.147 5.309 -5.009" radius="2.6" src="#light_wood" geometry="radius:0.3"></a-sphere>
+      <a-sphere id="tree-18" position="-2.251 5.32 -4.995" radius="2.6" src="#light_wood" geometry="radius:0.3"></a-sphere>
+      <a-sphere id="tree-19" position="0 4.512 -5.012" radius="3" src="#light_wood" geometry="radius:0.79"></a-sphere>
+
+      <a-sphere id="bundle-1" position="0 9.25 -6" radius="3" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-2" position="3 9.25 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-3" position="4.922 9.25 -5.069" radius="2.6" src="#green_leaf" geometry="radius:2"></a-sphere>
+      <a-sphere id="bundle-4" position="-4.773 9.25 -5.844" radius="2.6" src="#green_leaf" geometry="radius:2"></a-sphere>
+      <a-sphere id="bundle-7" position="3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-8" position="-3 9.25 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-9" position="-3 8 -4.5" radius="1.6" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-10" position="2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+      <a-sphere id="bundle-11" position="-2 9.66 -6" radius="2.6" src="#green_leaf"></a-sphere>
+    </a-entity>
+
+    <a-sky src="#daylight" color="#81D4FA"></a-sky>
+
+    <a-entity camera="userHeight: 3" look-controls wasd-controls position="0 0 0" rotation="0 0 0" scale="" visible=""></a-entity>
+  </a-scene>
+</body>
+
+</html>

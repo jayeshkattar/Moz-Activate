@@ -1,0 +1,17 @@
+<html>
+  <head><title>It's a rainy day</title>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-mountain-component@0.3.2/dist/aframe-mountain-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
+
+    <a-mountain src="images/soil.jpg"></a-mountain>
+
+    <a-sky src="images/pano.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>

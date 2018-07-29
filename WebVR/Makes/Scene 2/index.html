@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+	</head>
+
+	<body>
+		<a-scene>
+			<a-assets>
+			<a-asset-item id="object" src="models/tardis-obj/tardis.obj"></a-asset-item>
+			<a-asset-item id="material" src="models/tardis-obj/tardis.mtl"></a-asset-item>
+			<img id="wall" src="images/wall.jpg">
+			<img id="disco" src="images/disco.jpg">
+		</a-assets>
+			<a-obj-model src="#object" mtl="#material"></a-obj-model>
+
+		<a-box src="#wall" width="5" height="5" depth="5" position="15 0 4" > 
+			
+			</a-box>	
+			<a-cone color="tomato" radius-bottom="2" radius-top="0" height="5" position="-15 0 4"></a-cone>
+			<a-sphere src="#disco" radius="5" position="0 15 5"></a-sphere>
+		<!--<a-plane src="#ground" height="0.5" width="5"></a-plane>-->
+		<a-sky src="images/black.jpg"></a-sky>
+		</a-scene>
+		
+		
+
+	</body>
+</html>
