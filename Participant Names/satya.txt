@@ -1,0 +1,3 @@
+Name: SatyaDurga.Kasa
+Reps Link: https://mozillians.org/en-US/u/satya.kasa9/
+Git userName: satyadurgakasa
